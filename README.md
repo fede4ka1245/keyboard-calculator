@@ -94,5 +94,5 @@ class KeyboardCalculator {
 
 ## Inspired by keyboard in Tinkoff bank application
 <p align="start">
-  <img src="https://github.com/fede4ka1245/keyboard-calculator/blob/main/docs/calc.png" height="270px" width="374px" />
+  <img src="https://github.com/fede4ka1245/keyboard-calculator/blob/main/docs/calc.png" height="426px" width="315px" />
 </p>
