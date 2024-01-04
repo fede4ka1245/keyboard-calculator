@@ -1,11 +1,8 @@
-body {
-  font-family: sans-serif;
-}
-
 :root {
-  --awesome-calculator-height: 9em;
+  --awesome-calculator-height: 14em;
   --awesome-calculator-hover-background: rgba(128, 128, 128, 0.4);
   --awesome-calculator-hover-border: solid 1px rgba(128, 128, 128, 0.6);
+  --awesome-calculator-active-bg: rgba(128, 128, 128, 0.8);
   --awesome-calculator-border-radius: 5px;
   --awesome-calculator-key-color: black;
   --awesome-calculator-key-bg: rgba(128, 128, 128, 0.2);
@@ -115,4 +112,10 @@ body {
     background: var(--awesome-calculator-hover-background);
     border: var(--awesome-calculator-hover-border);
   }
+}
+
+.awesome-calculator-container .key:active {
+  cursor: pointer;
+  background: var(--awesome-calculator-active-bg);
+  border: var(--awesome-calculator-hover-border);
 }

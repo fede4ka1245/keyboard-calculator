@@ -12,7 +12,7 @@ const onElementKeepTapped = (
     idTimer = setTimeout(() => onKeeped(event), 120);
   };
 
-  element.onmousedown = (event) => {
+  element.ontouchstart = (event) => {
     isKeeped = true;
     idTimer = setTimeout(() => onKeeped(event), 300);
   };

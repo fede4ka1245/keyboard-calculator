@@ -19,6 +19,14 @@ can count some staff
 
 ```typescript
 /**
+ * Params for onUpdate function
+ */
+type OnUpdateParams = {
+  originalExpression: string[];
+  processedExpression: string[];
+};
+
+/**
  * Represents a virtual keyboard calculator for basic arithmetic operations.
  */
 class KeyboardCalculator {
@@ -68,9 +76,10 @@ class KeyboardCalculator {
 ### CSS vars
 ```css
 :root {
-  --awesome-calculator-height: 9em;
+  --awesome-calculator-height: 14em;
   --awesome-calculator-hover-background: rgba(128, 128, 128, 0.4);
   --awesome-calculator-hover-border: solid 1px rgba(128, 128, 128, 0.6);
+  --awesome-calculator-active-bg: rgba(128, 128, 128, 0.8);
   --awesome-calculator-border-radius: 5px;
   --awesome-calculator-key-color: black;
   --awesome-calculator-key-bg: rgba(128, 128, 128, 0.2);
