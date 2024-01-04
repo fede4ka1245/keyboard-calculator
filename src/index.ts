@@ -16,6 +16,10 @@ const onElementKeepTapped = (
     isKeeped = true;
     idTimer = setTimeout(() => onKeeped(event), 300);
   };
+  element.onmousedown = (event) => {
+    isKeeped = true;
+    idTimer = setTimeout(() => onKeeped(event), 300);
+  };
   element.onmouseup = () => {
     isKeeped = false;
     clearTimeout(idTimer);

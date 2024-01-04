@@ -1,6 +1,6 @@
 {
   "name": "calculator-keyboard",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Calculator keyboard inspired by ux and ui in Tinkoff bank application.",
   "main": "index.ts",
   "module": "dist/index.mjs",
@@ -21,5 +21,8 @@
   "devDependencies": {
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "vite-plugin-css-injected-by-js": "^3.3.1"
   }
 }
