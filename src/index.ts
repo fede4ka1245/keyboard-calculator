@@ -151,7 +151,7 @@ type OnUpdateParams = {
   processedExpression: string[];
 };
 
-export class AwesomeCalculator {
+export class KeyboardCalculator {
   stack: string[] = ["0"];
   operations: string[] = [
     KeyName.plus,
