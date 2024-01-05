@@ -99,7 +99,10 @@ class KeyboardCalculator {
 ```
 
 ## Example in codesandbox
-[Example on vue in codesandbox](https://codesandbox.io/p/devbox/virtual-calculator-keyboard-vlk5jx?file=%2Fsrc%2FApp.vue%3A3%2C11)
+[Example on vue in codesandbox](https://codesandbox.io/p/devbox/vue-calc-gwgwg2?file=%2Fsrc%2Fcomponents%2FCalculatorModal.vue%3A48%2C34)
+<p align="start">
+  <img src="https://github.com/fede4ka1245/keyboard-calculator/blob/main/docs/demo.png" height="394px" width="276px" />
+</p>
 
 ## Inspired by keyboard in Tinkoff bank application
 <p align="start">
