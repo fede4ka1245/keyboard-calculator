@@ -9,11 +9,6 @@
   --awesome-calculator-gap: 2px;
 }
 
-.container {
-  width: 240px;
-  height: 600px;
-}
-
 .awesome-calculator-container {
   width: inherit;
   height: var(--awesome-calculator-height);

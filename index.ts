@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./src/styles.css";
 
 const onElementKeepTapped = (
   element: HTMLElement,
@@ -155,7 +155,16 @@ type OnUpdateParams = {
   processedExpression: string[];
 };
 
-export class KeyboardCalculator {
+interface Calculator {
+  stack: string [],
+  onUpdate: (params: OnUpdateParams) => any,
+  clearValue: () => void,
+  destroy: () => void,
+  getCurrentCountedValue: () => number | undefined
+  isExpressionValid: () => boolean
+}
+
+export class KeyboardCalculator implements Calculator {
   stack: string[] = ["0"];
   operations: string[] = [
     KeyName.plus,

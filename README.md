@@ -99,7 +99,7 @@ class KeyboardCalculator {
 ```
 
 ## Example in codesandbox
-[Example in codesandbox](https://codesandbox.io/p/sandbox/calculator-zrf2vk?file=%2Fsrc%2Findex.ts%3A1%2C1-382%2C2)
+[Example on vue in codesandbox](https://codesandbox.io/p/devbox/virtual-calculator-keyboard-vlk5jx?file=%2Fsrc%2FApp.vue%3A3%2C11)
 
 ## Inspired by keyboard in Tinkoff bank application
 <p align="start">

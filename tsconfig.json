@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "strict": false,
-    "module": "commonjs",
-    "jsx": "preserve",
+    "target": "es2018",
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "declaration": true,
     "sourceMap": true,
-    "allowJs": true,
-    "lib": ["es6", "dom", "es2017"],
-    "target": "es2017",
-    "rootDir": "src",
-    "moduleResolution": "node"
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
   }
 }
