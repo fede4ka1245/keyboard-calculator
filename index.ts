@@ -363,7 +363,7 @@ export class KeyboardCalculator implements Calculator {
     const deleteKey = document.getElementById(`awesome-calculator-key-${KeyName.delete}`);
 
     onElementKeepTapped(deleteKey, () => {
-      this.actions["operation"](KeyName.delete);
+      this.actions[KeyName.delete]();
 
       if (this.onUpdate) {
         this.onUpdate({
