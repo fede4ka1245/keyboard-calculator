@@ -360,29 +360,10 @@ export class KeyboardCalculator implements Calculator {
       }
     };
 
-    onElementKeepTapped(awesomeCalc, (event) => {
-      if (
-        !(event.target as HTMLElement).id.includes("awesome-calculator-key-")
-      ) {
-        return;
-      }
+    const deleteKey = document.getElementById(`awesome-calculator-key-${KeyName.delete}`);
 
-      const key: string = (event.target as HTMLElement).id.replace(
-        "awesome-calculator-key-",
-        ""
-      );
-
-      if (!key) {
-        return;
-      }
-
-      if (this.actions[key]) {
-        this.actions[key]();
-      } else if (this._isOperation(key as KeyName)) {
-        this.actions["operation"](key as KeyName);
-      } else {
-        this.actions["num"](key);
-      }
+    onElementKeepTapped(deleteKey, () => {
+      this.actions["operation"](KeyName.delete);
 
       if (this.onUpdate) {
         this.onUpdate({
@@ -391,5 +372,37 @@ export class KeyboardCalculator implements Calculator {
         });
       }
     });
+
+    // onElementKeepTapped(awesomeCalc, (event) => {
+    //   if (
+    //     !(event.target as HTMLElement).id.includes("awesome-calculator-key-")
+    //   ) {
+    //     return;
+    //   }
+    //
+    //   const key: string = (event.target as HTMLElement).id.replace(
+    //     "awesome-calculator-key-",
+    //     ""
+    //   );
+    //
+    //   if (!key) {
+    //     return;
+    //   }
+    //
+    //   if (this.actions[key]) {
+    //     this.actions[key]();
+    //   } else if (this._isOperation(key as KeyName)) {
+    //     this.actions["operation"](key as KeyName);
+    //   } else {
+    //     this.actions["num"](key);
+    //   }
+    //
+    //   if (this.onUpdate) {
+    //     this.onUpdate({
+    //       originalExpression: this.stack,
+    //       processedExpression: this._processExpression(this.stack),
+    //     });
+    //   }
+    // });
   }
 }
